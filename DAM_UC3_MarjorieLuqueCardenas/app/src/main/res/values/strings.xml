@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DAM_UC3_MarjorieLuqueCardenas</string>
+    <string name="btnRegistrar">REGISTRATE</string>
+    <string name="checkboxMujer">Mujer</string>
+    <string name="checkboxHombre">Hombre</string>
+    <string name="textNombres" />
+    <string name="textoName">Nombres</string>
+    <string name="Text_Apellidos">Apellidos</string>
+    <string name="textEmail">Tu direción de ccorreo electronico</string>
+    <string name="textoEmail">Tu dirección de correo electronico</string>
+    <string name="textContraseña">Contraseña Nueva</string>
+    <string name="textSexo">Sexo</string>
+    <string name="text_nacimiento">Fecha de Nacimiento</string>
+    <string name="LB_NOMBRES" />
+    <string name="LB_APELLIDOS" />
+    <string name="LB_CORREO" />
+    <string name="LB_CONTRASEÑA" />
+    <string name="LB_FECHA" />
+</resources>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0e5ee"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:text="Registrate"
+        android:textColor="#3e5b92"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <TextView
+        android:id="@+id/textView_NOMBRES"
+        android:layout_width="83dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:drawableEnd="@drawable/baseline_drive_file_rename_outline_24"
+        android:text="@string/textoName"
+        android:textColor="#3e5b92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Es gratis(Y lo seguira siendo)"
+        android:textColor="#3e5b92"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textVieApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:drawableEnd="@drawable/baseline_app_registration_24"
+        android:text="@string/Text_Apellidos"
+        android:textColor="#3e5b92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_NOMBRES" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="127dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:drawableEnd="@drawable/baseline_change_circle_24"
+        android:text="@string/textoEmail"
+        android:textColor="#3e5b92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVieApellidos" />
+
+    <TextView
+        android:id="@+id/textViewContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:drawableEnd="@drawable/baseline_password_24"
+        android:text="@string/textContraseña"
+        android:textColor="#3e5b92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
+
+    <TextView
+        android:id="@+id/textViewSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:drawableEnd="@drawable/baseline_outlet_24"
+        android:text="@string/textSexo"
+        android:textColor="#3e5b92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContraseña" />
+
+    <TextView
+        android:id="@+id/textViewNacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:drawableEnd="@drawable/baseline_date_range_24"
+        android:text="@string/text_nacimiento"
+        android:textColor="#3e5b92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSexo" />
+
+    <Button
+        android:id="@+id/buttonRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/colorButton"
+        android:text="@string/btnRegistrar"
+        app:icon="@drawable/baseline_account_circle_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNacimiento" />
+
+    <EditText
+        android:id="@+id/txt_nombres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/LB_NOMBRES"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toEndOf="@+id/textView_NOMBRES"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editTextTextAPELLIDOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/LB_APELLIDOS"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toEndOf="@+id/textVieApellidos"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nombres" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/LB_CORREO"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toEndOf="@+id/textViewEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextAPELLIDOS" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="@string/LB_CONTRASEÑA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toEndOf="@+id/textViewContraseña"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="208dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="@string/LB_FECHA"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegistrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toEndOf="@+id/textViewNacimiento"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxHombre"
+        app:layout_constraintVertical_bias="0.354" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMujer"
+        android:layout_width="79dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/checkboxMujer"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxHombre"
+        app:layout_constraintStart_toEndOf="@+id/textViewSexo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHombre"
+        android:layout_width="92dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="97dp"
+        android:text="@string/checkboxHombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="58dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/facebook" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
